@@ -1,0 +1,52 @@
+name: word2vec
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - asn1crypto=0.24.0=py36_1003
+  - boto=2.49.0=py_0
+  - boto3=1.9.134=py_0
+  - botocore=1.12.134=py_0
+  - bz2file=0.98=py_0
+  - ca-certificates=2019.3.9=hecc5488_0
+  - certifi=2019.3.9=py36_0
+  - cffi=1.12.3=py36hccf1714_0
+  - chardet=3.0.4=py36_1003
+  - cryptography=2.6.1=py36h212c5bf_0
+  - docutils=0.14=py36_1001
+  - idna=2.8=py36_1000
+  - jmespath=0.9.4=py_0
+  - libblas=3.8.0=5_openblas
+  - libcblas=3.8.0=5_openblas
+  - libgfortran=3.0.1=0
+  - liblapack=3.8.0=5_openblas
+  - numpy=1.16.2=py36hbb3c62a_1
+  - openblas=0.3.5=h436c29b_1001
+  - openssl=1.1.1b=h01d97ff_2
+  - pycparser=2.19=py36_1
+  - pyopenssl=19.0.0=py36_0
+  - pysocks=1.6.8=py36_1002
+  - python-dateutil=2.8.0=py_0
+  - requests=2.21.0=py36_1000
+  - s3transfer=0.2.0=py36_0
+  - scipy=1.2.1=py36hbd7caa9_1
+  - six=1.12.0=py36_1000
+  - smart_open=1.8.1=py_0
+  - urllib3=1.24.2=py36_0
+  - gensim=3.4.0=py36h1de35cc_0
+  - libcxx=4.0.1=hcfea43d_1
+  - libcxxabi=4.0.1=hcfea43d_1
+  - libedit=3.1.20181209=hb402a30_0
+  - libffi=3.2.1=h475c297_4
+  - ncurses=6.1=h0a44026_1
+  - pip=19.0.3=py36_0
+  - python=3.6.8=haf84260_0
+  - readline=7.0=h1de35cc_5
+  - setuptools=41.0.0=py36_0
+  - sqlite=3.27.2=ha441bb4_0
+  - tk=8.6.8=ha441bb4_0
+  - wheel=0.33.1=py36_0
+  - xz=5.2.4=h1de35cc_4
+  - zlib=1.2.11=h1de35cc_3
+prefix: /Users/mtk11018/anaconda/envs/word2vec
+

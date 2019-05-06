@@ -1,27 +1,21 @@
-from gensim import models
-from collections import defaultdict
+from gensim.models import word2vec
 
-documents = [
-    "Hello this is first doc",
-    "oops this is second doc"
-]
+params = {
+    'model': './model/word2vec_3.model'
+}
 
-# remove common words and tokenize
-stoplist = set('for a of the and to in'.split())
-texts = [
-    [word for word in document.lower().split() if word not in stoplist]
-    for document in documents
-]
+def main():
+    model = word2vec.Word2Vec.load(params['model'])
 
-# remove words that appear only once
-frequency = defaultdict(int)
-for text in texts:
-    for token in text:
-        frequency[token] += 1
+    # show two terms similarity
+    sim = model.similarity('man', 'woman')
+    print(sim)
 
-texts = [
-    [token for token in text if frequency[token] > 1]
-    for text in texts
-]
+    # compute cosine similarity between two sets of words.
+    n_sim = model.n_similarity(['sushi', 'shop'], ['japanese', 'restaurant'])
+    print(n_sim)
 
-print(texts)
+    
+
+if __name__ == "__main__":
+    main()
